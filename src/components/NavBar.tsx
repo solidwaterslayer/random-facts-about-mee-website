@@ -11,7 +11,7 @@ export default function NavBar() {
 				<Navbar.Collapse id='responsive-navbar-nav'>
 					<Nav className='me-auto' />
 					<Nav>
-						<Nav.Link as={Link} to='/' className='nav-link'>home</Nav.Link>
+						<Nav.Link as={Link} to='' className='nav-link'>home</Nav.Link>
 						<Nav.Link as={Link} to='projects' className='nav-link'>projects</Nav.Link>
 						<Nav.Link as={Link} to='about' className='nav-link'>about</Nav.Link>
 					</Nav>
