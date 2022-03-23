@@ -22,13 +22,23 @@ export default function NavBar() {
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav'>
 					<Nav className='me-auto' />
-					<Nav>
-						<Nav.Link as={Link} className={ !['/projects', '/about'].includes(url) ? 'nav-link active' : 'nav-link' } to=''>home</Nav.Link>
-						<Nav.Link as={Link} className={ url === '/projects' ? 'nav-link active' : 'nav-link' } to='projects'>projects</Nav.Link>
-						<Nav.Link as={Link} className={ url === '/about' ? 'nav-link active' : 'nav-link' } to='about'>about</Nav.Link>
+					<Nav className='me-2'>
+						<Nav.Link as={ Link } className={ !['/projects', '/about'].includes(url) ? 'nav-link active' : 'nav-link' } eventKey={ 0 } to=''>home</Nav.Link>
+						<Nav.Link as={ Link } className={ url === '/projects' ? 'nav-link active' : 'nav-link' } eventKey={ 1 } to='projects'>projects</Nav.Link>
+						<Nav.Link as={ Link } className={ url === '/about' ? 'nav-link active' : 'nav-link' } eventKey={ 2 } to='about'>about</Nav.Link>
 					</Nav>
-					<Navbar.Brand className='text-danger'><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></Navbar.Brand>
-					<Navbar.Brand className='text-danger'><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></Navbar.Brand>
+					<div className='my-2'>
+						<Navbar.Brand>
+							<a className='text-danger' href='https://www.linkedin.com/in/michael-tran-012345679/' rel='noreferrer noopener' target='_blank'>
+								<FontAwesomeIcon icon={ faLinkedin } />
+							</a>
+						</Navbar.Brand>
+						<Navbar.Brand>
+							<a className='text-danger' href='https://github.com/solidwaterslayer' rel='noreferrer noopener' target='_blank'>
+								<FontAwesomeIcon icon={ faGithub } />
+							</a>
+						</Navbar.Brand>
+					</div>
 				</Navbar.Collapse>
 			</Container>
 		</Navbar>
