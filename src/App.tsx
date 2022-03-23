@@ -6,13 +6,18 @@ import Projects from './components/Projects'
 
 export default function App() {
   return (
-    <div className='bg-dark' style={{ fontFamily: 'Roboto Mono, monospace', fontSize: '1.1em', height: '100vh', }}>
+    <>
       <NavBar/>
-      <Routes>
-        <Route path='projects' element={ <Projects /> } />
-        <Route path='about' element={ <About /> } />
-        <Route path='*' element={ <Home /> } />
-      </Routes>
-    </div>
+      <div className="row m-0">
+        <div className="col-md-3"></div>
+        <div className="col-md-9 col-sm-12 border-start border-danger">
+          <Routes>
+            <Route path='projects' element={ <Projects /> } />
+            <Route path='about' element={ <About /> } />
+            <Route path='*' element={ <Home /> } />
+          </Routes>
+        </div>
+      </div>
+    </>
   )
 }
