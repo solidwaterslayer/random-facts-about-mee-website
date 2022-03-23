@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+import gsap from 'gsap'
+import { useEffect, useRef, useState } from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import { Link, useLocation } from 'react-router-dom'
 import '../index.css'
@@ -6,12 +7,17 @@ import '../index.css'
 export default function NavBar() {
 	let location = useLocation().pathname
   let [url, setURL] = useState(location)
-  useEffect(() => { setURL(location) }, [location])
+	let urlRef = useRef(null)
+
+  useEffect(() => {
+		setURL(location)
+		gsap.from(urlRef.current, { duration: 1, ease: 'bounce', opacity: 0, x: 100, })
+	}, [location])
 
 	return (
 		<Navbar bg='dark' collapseOnSelect expand='lg' variant='dark'>
 			<Container>
-				<Navbar.Brand className='text-danger'>{ ['/projects', '/about'].includes(url) ? url : '/' }</Navbar.Brand>
+				<Navbar.Brand className='text-danger' ref={urlRef}>{ ['/projects', '/about'].includes(url) ? url : '/' }</Navbar.Brand>
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav'>
 					<Nav className='me-auto' />
