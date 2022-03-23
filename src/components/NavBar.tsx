@@ -2,7 +2,8 @@ import gsap from 'gsap'
 import { useEffect, useRef, useState } from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import { Link, useLocation } from 'react-router-dom'
-import '../index.css'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function NavBar() {
 	let location = useLocation().pathname
@@ -26,8 +27,8 @@ export default function NavBar() {
 						<Nav.Link as={Link} className={ url === '/projects' ? 'nav-link active' : 'nav-link' } to='projects'>projects</Nav.Link>
 						<Nav.Link as={Link} className={ url === '/about' ? 'nav-link active' : 'nav-link' } to='about'>about</Nav.Link>
 					</Nav>
-					<Navbar.Brand className='text-danger'>L</Navbar.Brand>
-					<Navbar.Brand className='text-danger'>G</Navbar.Brand>
+					<Navbar.Brand className='text-danger'><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></Navbar.Brand>
+					<Navbar.Brand className='text-danger'><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></Navbar.Brand>
 				</Navbar.Collapse>
 			</Container>
 		</Navbar>
