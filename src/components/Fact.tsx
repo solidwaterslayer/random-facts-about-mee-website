@@ -1,10 +1,10 @@
 import gsap from 'gsap'
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useEffect, useRef } from 'react'
 
 export default function Fact({ text }: any) {
+  gsap.registerPlugin(ScrollTrigger)
   let factRef = useRef(null)
-  gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
     gsap.to(factRef.current, { opacity: 0, scrollTrigger: { end: 'center 10%', markers: true, start: 'center 40%', scrub: true, trigger: factRef.current, toggleActions: 'play none none none', }, })
