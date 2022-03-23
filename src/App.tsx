@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import About from './components/About'
 import Home from './components/Home'
@@ -10,6 +10,11 @@ export default function App() {
   if (!['/projects', '/about'].includes(location)) { location = '/' }
 
   let [url, setURL] = useState(location)
+
+  useEffect(() => {
+    if (!['/projects', '/about'].includes(location)) { location = '/' }
+    setURL(location)
+  }, [location])
 
   return (
     <div className='bg-dark' style={{ fontFamily: 'Roboto Mono, monospace', fontSize: '1.1em', height: '100vh', }}>
