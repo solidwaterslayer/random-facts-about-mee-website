@@ -1,6 +1,6 @@
-import { Canvas, useFrame } from "@react-three/fiber"
-import { useRef } from "react"
-import Fact from "./Fact"
+import { Canvas, useFrame } from '@react-three/fiber'
+import { useRef } from 'react'
+import Fact from './Fact'
 
 export default function Home() {
 	function Cube() {
