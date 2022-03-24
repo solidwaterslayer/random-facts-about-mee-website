@@ -7,7 +7,7 @@ export default function Fact({ text }: any) {
   let factRef = useRef(null)
 
   useEffect(() => {
-    gsap.to(factRef.current, { opacity: 0, scrollTrigger: { end: 'center 10%', start: 'center 40%', scrub: true, trigger: factRef.current, toggleActions: 'play none none none', }, })
+    gsap.to(factRef.current, { opacity: 0, scrollTrigger: { end: 'center 0%', start: 'center 40%', scrub: true, trigger: factRef.current, toggleActions: 'play none none none', }, })
     gsap.from(factRef.current, { opacity: 0, scrollTrigger: { end: 'center 60%', start: 'center 90%', scrub: true, trigger: factRef.current, toggleActions: 'play none none none', }, })
   })
 
