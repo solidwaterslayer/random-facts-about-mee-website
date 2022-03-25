@@ -1,7 +1,7 @@
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import Fact from './Fact'
-import { Girl } from './Girl'
-import { Snowflake } from './Snowflake'
+import { Girl } from './girl/Girl'
+import { Snowflake } from './snowflake/Snowflake'
 
 export default function Home() {
 	let fractalRef = useRef(null)
@@ -12,7 +12,9 @@ export default function Home() {
 		<>
 			<Fact text='my least favorite number is 8 | its too symmetrical' />
 			<Fact text='my favorite animal is squid' />
-			<Fact text='i use light mode' />
+			<>
+				<Fact text='i use light mode' />
+			</>
 			<Fact text='i like to play with knives' />
 			<>
 				<Fact customRef={ fractalRef } text='my favorite shape is snowflake' />
