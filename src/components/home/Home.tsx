@@ -1,10 +1,11 @@
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import Fact from './Fact'
-import DanceTexture from './DanceTexture.gif'
+import { Girl } from './Girl'
 import { Snowflake } from './Snowflake'
 
 export default function Home() {
 	let fractalRef = useRef(null)
+	let danceRef = useRef(null)
 	let winterRef = useRef(null)
 
 	return (
@@ -13,15 +14,19 @@ export default function Home() {
 			<Fact text='my favorite animal is squid' />
 			<Fact text='i use light mode' />
 			<Fact text='i like to play with knives' />
-			<Fact customRef={ fractalRef } text='my favorite shape is snowflake' />
-			<Snowflake fractalRef={ fractalRef } />
+			<>
+				<Fact customRef={ fractalRef } text='my favorite shape is snowflake' />
+				<Snowflake fractalRef={ fractalRef } />
+			</>
 			<Fact text='i think capital letters are overrated | i dont know if you can tell' />
-			<Fact text='i like nightcore' />
-			<img className='position-fixed bottom-0 end-0' src={ DanceTexture } alt='' />
+			<>
+				<Fact customRef={ danceRef } text='i like nightcore' />
+				<Girl danceRef={ danceRef } />
+			</>
 			<Fact text='imm a minimalist' />
 			<Fact text='my favorite number is 9' />
-			<Fact customRef={ winterRef } text='my least favorite season is winter | when you are warm, you are unconfortable; but when you are cold, you are literally in pain' />
 			<>
+				<Fact customRef={ winterRef } text='my least favorite season is winter | when you are warm, you are unconfortable; but when you are cold, you are literally in pain' />
 				<Snowflake winterRef={ winterRef } />
 				<Snowflake winterRef={ winterRef } />
 				<Snowflake winterRef={ winterRef } />

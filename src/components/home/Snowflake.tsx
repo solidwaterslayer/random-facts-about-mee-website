@@ -26,7 +26,7 @@ export function Snowflake({ fractalRef, winterRef }: any) {
 
   return (
     <div className='position-fixed top-0 start-0 d-flex justify-content-center align-items-center' ref={ snowflakeRef } style={{ height: 0, width: 0, zIndex: -1, }}>
-      <img src={ SnowflakeTexture } alt='' />
+      <img alt='' src={ SnowflakeTexture } />
     </div>
   )
 }
