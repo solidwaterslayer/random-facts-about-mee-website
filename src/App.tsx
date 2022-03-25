@@ -7,8 +7,8 @@ import Projects from './components/Projects'
 export default function App() {
   return (
     <>
-      <NavBar/>
-      <div className="row m-0">
+      <NavBar />
+      <div className="row mx-0">
         <div className="col-md-3"></div>
         <div className="col-md-9 col-sm-12 border-start border-danger">
           <Routes>
