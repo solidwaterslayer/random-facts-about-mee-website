@@ -2,7 +2,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useEffect, useRef } from 'react'
 
-export default function Fact({ text }: any) {
+export default function Fact({ customRef, text }: any) {
   gsap.registerPlugin(ScrollTrigger)
   let factRef = useRef(null)
 
@@ -13,7 +13,7 @@ export default function Fact({ text }: any) {
 
 	return (
     <div className='my-5 py-5' ref={ factRef }>
-      <div className='my-5 py-5'>
+      <div className='my-5 py-5' ref={ customRef }>
         <h1 className={ Math.random() < .7 ? 'text-light mt-5 pt-5' : 'text-danger mt-5 pt-5' }>{ text.split(' | ')[0] }</h1>
         <p className='text-secondary mb-5 pb-5'>{ text.split(' | ')[1] }</p>
       </div>
