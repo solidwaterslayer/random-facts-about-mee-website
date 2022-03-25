@@ -3,6 +3,7 @@ import Fact from './Fact'
 import { Snowflake } from './Snowflake'
 
 export default function Home() {
+	let fractalRef = useRef(null)
 	let winterRef = useRef(null)
 
 	return (
@@ -11,57 +12,60 @@ export default function Home() {
 			<Fact text='my favorite animal is squid' />
 			<Fact text='i use light mode' />
 			<Fact text='i like to play with knives' />
-			<Fact text='my favorite shape is snowflake' />
+			<Fact customRef={ fractalRef } text='my favorite shape is snowflake' />
+			<Snowflake fractalRef={ fractalRef } />
 			<Fact text='i think capital letters are overrated | i dont know if you can tell' />
 			<Fact text='i like nightcore' />
 			<Fact text='imm a minimalist' />
 			<Fact text='my favorite number is 9' />
 			<Fact customRef={ winterRef } text='my least favorite season is winter | when you are warm, you are unconfortable; but when you are cold, you are literally in pain' />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
-			<Snowflake winterRef={ winterRef } />
+			<>
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+				<Snowflake winterRef={ winterRef } />
+			</>
 			<Fact text='imm ambidextrous' />
 			<Fact text='my favorite color is red' />
 		</>
