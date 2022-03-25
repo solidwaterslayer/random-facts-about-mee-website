@@ -16,7 +16,7 @@ export default function NavBar() {
 	}, [location])
 
 	return (
-		<Navbar bg='dark' className='sticky-top' collapseOnSelect expand='lg' variant='dark'>
+		<Navbar className='sticky-top' collapseOnSelect expand='lg' variant='dark'>
 			<Container>
 				<Navbar.Brand className='text-danger' ref={ urlRef }>{ ['/projects', '/about'].includes(url) ? url : '/' }</Navbar.Brand>
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
