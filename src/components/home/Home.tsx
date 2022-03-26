@@ -7,31 +7,38 @@ import { Sky } from './sky/Sky'
 import { Snowflake } from './snowflake/Snowflake'
 
 export default function Home() {
+	let danceRef = useRef(null)
+	let crystalizeRef = useRef(null)
 	let sunriseRef = useRef(null)
 	let throwRef = useRef(null)
-	let crystalizeRef = useRef(null)
-	let danceRef = useRef(null)
 	let winterRef = useRef(null)
 
 	return (
 		<>
-			<Fact text='my least favorite number is 8 | its too symmetrical' />
+			<Fact text='my favorite color is red' />
+
+			<Girl danceRef={ danceRef } />
+			<Fact customRef={ danceRef } text='i like nightcore' />
+
+			<Fractal crystalizeRef={ crystalizeRef } />
+			<Fact customRef={ crystalizeRef } text='my favorite shape is snowflake' />
+
 			<Fact text='my favorite animal is squid' />
+			<Fact text='my favorite number is 9' />
 
 			<Sky sunriseRef={ sunriseRef } />
 			<Fact customRef={ sunriseRef } text='i use light mode' />
 
+			<Fact text='imm ambidextrous' />
+
+			<Fact text='i think capital letters are overrated | i dont know if you can tell' />
+
+			<Fact text='my least favorite number is 8 | its too symmetrical' />
+
 			<Knife throwRef={ throwRef } />
 			<Fact customRef={ throwRef } text='i like to play with knives' />
 
-			<Fractal crystalizeRef={ crystalizeRef } />
-			<Fact customRef={ crystalizeRef } text='my favorite shape is snowflake' />
-			<Fact text='i think capital letters are overrated | i dont know if you can tell' />
-
-			<Girl danceRef={ danceRef } />
-			<Fact customRef={ danceRef } text='i like nightcore' />
 			<Fact text='imm a minimalist' />
-			<Fact text='my favorite number is 9' />
 
 			<>
 				<Snowflake winterRef={ winterRef } />
@@ -81,8 +88,6 @@ export default function Home() {
 				<Snowflake winterRef={ winterRef } />
 			</>
 			<Fact customRef={ winterRef } text='my least favorite season is winter | when you are warm, you are unconfortable; but when you are cold, you are literally in pain' />
-			<Fact text='imm ambidextrous' />
-			<Fact text='my favorite color is red' />
 		</>
 	)
 }
