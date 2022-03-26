@@ -8,9 +8,9 @@ export default function App() {
   return (
     <>
       <NavBar />
-      <div className="row mx-0">
-        <div className="col-md-3"></div>
-        <div className="col-md-9 col-sm-12 border-start border-danger">
+      <div className='mx-0 row'>
+        <div className='col-md-3'></div>
+        <div className='border-danger border-start col-md-9 col-sm-12'>
           <Routes>
             <Route path='projects' element={ <Projects /> } />
             <Route path='about' element={ <About /> } />
