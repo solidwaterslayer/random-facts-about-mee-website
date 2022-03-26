@@ -2,11 +2,13 @@ import { useRef } from 'react'
 import Fact from './Fact'
 import { Fractal } from './fractal/Fractal'
 import { Girl } from './girl/Girl'
+import { Knife } from './knife/Knife'
 import { Sky } from './sky/Sky'
 import { Snowflake } from './snowflake/Snowflake'
 
 export default function Home() {
 	let sunriseRef = useRef(null)
+	let throwRef = useRef(null)
 	let crystalizeRef = useRef(null)
 	let danceRef = useRef(null)
 	let winterRef = useRef(null)
@@ -18,7 +20,9 @@ export default function Home() {
 
 			<Sky sunriseRef={ sunriseRef } />
 			<Fact customRef={ sunriseRef } text='i use light mode' />
-			<Fact text='i like to play with knives' />
+
+			<Knife throwRef={ throwRef } />
+			<Fact customRef={ throwRef } text='i like to play with knives' />
 
 			<Fractal crystalizeRef={ crystalizeRef } />
 			<Fact customRef={ crystalizeRef } text='my favorite shape is snowflake' />
