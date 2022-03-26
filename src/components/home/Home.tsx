@@ -1,10 +1,11 @@
 import { useRef } from 'react'
 import Fact from './Fact'
+import { Fractal } from './fractal/Fractal'
 import { Girl } from './girl/Girl'
 import { Snowflake } from './snowflake/Snowflake'
 
 export default function Home() {
-	let fractalRef = useRef(null)
+	let crystalizeRef = useRef(null)
 	let danceRef = useRef(null)
 	let winterRef = useRef(null)
 
@@ -17,8 +18,8 @@ export default function Home() {
 			</>
 			<Fact text='i like to play with knives' />
 			<>
-				<Fact customRef={ fractalRef } text='my favorite shape is snowflake' />
-				<Snowflake fractalRef={ fractalRef } />
+				<Fact customRef={ crystalizeRef } text='my favorite shape is snowflake' />
+				<Fractal crystalizeRef={ crystalizeRef } />
 			</>
 			<Fact text='i think capital letters are overrated | i dont know if you can tell' />
 			<>
