@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/random-facts-about-mee-website/static/css/main.ba05daa5.css",
-    "main.js": "/random-facts-about-mee-website/static/js/main.35c138ab.js",
+    "main.js": "/random-facts-about-mee-website/static/js/main.389a158b.js",
     "static/js/787.b967604c.chunk.js": "/random-facts-about-mee-website/static/js/787.b967604c.chunk.js",
+    "static/media/CloudTexture.png": "/random-facts-about-mee-website/static/media/CloudTexture.fe781bb578edeeff063f.png",
     "static/media/GirlTexture.gif": "/random-facts-about-mee-website/static/media/GirlTexture.31f45c9f9e96acccdaba.gif",
+    "static/media/SunTexture.png": "/random-facts-about-mee-website/static/media/SunTexture.ca2361d80433911040a2.png",
     "static/media/FractalTexture.png": "/random-facts-about-mee-website/static/media/FractalTexture.5e05e64a1e7601741f24.png",
     "index.html": "/random-facts-about-mee-website/index.html",
     "main.ba05daa5.css.map": "/random-facts-about-mee-website/static/css/main.ba05daa5.css.map",
-    "main.35c138ab.js.map": "/random-facts-about-mee-website/static/js/main.35c138ab.js.map",
+    "main.389a158b.js.map": "/random-facts-about-mee-website/static/js/main.389a158b.js.map",
     "787.b967604c.chunk.js.map": "/random-facts-about-mee-website/static/js/787.b967604c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba05daa5.css",
-    "static/js/main.35c138ab.js"
+    "static/js/main.389a158b.js"
   ]
 }
