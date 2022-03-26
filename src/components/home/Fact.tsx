@@ -9,8 +9,8 @@ export default function Fact({ customRef, text }: any) {
   let downRef = useRef(null)
 
   useEffect(() => {
-    gsap.to(upRef.current, { opacity: 0, scrollTrigger: { end: 'center -10%', start: 'center 40%', scrub: true, trigger: upRef.current, }, })
-    gsap.from(downRef.current, { opacity: 0, scrollTrigger: { end: 'center 60%', start: 'center 110%', scrub: true, trigger: downRef.current, }, })
+    gsap.to(upRef.current, { opacity: 0, scrollTrigger: { end: 'center -10%', scrub: true, start: 'center 40%', trigger: upRef.current, }, })
+    gsap.from(downRef.current, { opacity: 0, scrollTrigger: { end: 'center 60%', scrub: true, start: 'center 110%', trigger: downRef.current, }, })
   })
 
 	return (

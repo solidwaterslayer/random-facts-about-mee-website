@@ -7,8 +7,8 @@ export function Girl({ danceRef }: any) {
   let downRef = useRef(null)
 
   useEffect(() => {
-    gsap.to(upRef.current, { opacity: 0, scrollTrigger: { end: 'center -10%', start: 'center 40%', scrub: true, trigger: danceRef.current, }, })
-    gsap.from(downRef.current, { opacity: 0, scrollTrigger: { end: 'center 60%', start: 'center 110%', scrub: true, trigger: danceRef.current, }, })
+    gsap.to(upRef.current, { opacity: 0, scrollTrigger: { end: 'center -10%', scrub: true, start: 'center 40%', trigger: danceRef.current, }, })
+    gsap.from(downRef.current, { opacity: 0, scrollTrigger: { end: 'center 60%', scrub: true, start: 'center 110%', trigger: danceRef.current, }, })
 	})
 
   return (

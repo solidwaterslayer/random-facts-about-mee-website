@@ -13,9 +13,9 @@ export function Snowflake({ winterRef }: any) {
     let endX = startX + Math.random() * 20 - 10
     let startY = -Math.random() * 50
     let endY = 100
-    gsap.to(upRef.current, { opacity: 0, scrollTrigger: { end: 'center -10%', start: 'center 40%', scrub: true, trigger: winterRef.current, }, })
-    gsap.from(downRef.current, { opacity: 0, scrollTrigger: { end: 'center 60%', start: 'center 110%', scrub: true, trigger: winterRef.current, }, })
-    gsap.fromTo(snowflakeRef.current, { rotation: 0, x: startX + 'vw', y: startY + 'vh', }, { duration: Math.random() * 5 + 5, ease: 'linear', repeat: -1, rotation: 720, scrollTrigger: { end: 'center -10%', start: 'center 110%', trigger: winterRef.current, toggleActions: 'resume pause resume pause', }, x: endX + 'vw', y: endY + 'vh', })
+    gsap.to(upRef.current, { opacity: 0, scrollTrigger: { end: 'center -10%', scrub: true, start: 'center 40%', trigger: winterRef.current, }, })
+    gsap.from(downRef.current, { opacity: 0, scrollTrigger: { end: 'center 60%', scrub: true, start: 'center 110%', trigger: winterRef.current, }, })
+    gsap.fromTo(snowflakeRef.current, { rotation: 0, x: startX + 'vw', y: startY + 'vh', }, { duration: Math.random() * 5 + 5, ease: 'linear', repeat: -1, rotation: 720, scrollTrigger: { end: 'center -10%', start: 'center 110%', toggleActions: 'resume pause resume pause', trigger: winterRef.current, }, x: endX + 'vw', y: endY + 'vh', })
 	})
 
   return (

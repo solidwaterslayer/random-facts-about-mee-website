@@ -8,9 +8,9 @@ export function Fractal({ crystalizeRef }: any) {
   let fractalRef = useRef(null)
 
   useEffect(() => {
-    gsap.to(upRef.current, { opacity: 0, scrollTrigger: { end: 'center -10%', start: 'center 40%', scrub: true, trigger: crystalizeRef.current, }, })
-    gsap.from(downRef.current, { opacity: 0, scrollTrigger: { end: 'center 60%', start: 'center 110%', scrub: true, trigger: crystalizeRef.current, }, })
-    gsap.fromTo(fractalRef.current, { scale: 0, }, { duration: 3, scale: 2, scrollTrigger: { end: 'center -10%', start: 'center 110%', trigger: crystalizeRef.current, toggleActions: 'play reset play reset', }, })
+    gsap.to(upRef.current, { opacity: 0, scrollTrigger: { end: 'center -10%', scrub: true, start: 'center 40%', trigger: crystalizeRef.current, }, })
+    gsap.from(downRef.current, { opacity: 0, scrollTrigger: { end: 'center 60%', scrub: true, start: 'center 110%', trigger: crystalizeRef.current, }, })
+    gsap.fromTo(fractalRef.current, { scale: 0, }, { duration: 3, scale: 2, scrollTrigger: { end: 'center -10%', start: 'center 110%', toggleActions: 'play reset play reset', trigger: crystalizeRef.current, }, })
 	})
 
   return (
