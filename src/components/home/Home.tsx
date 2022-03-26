@@ -2,9 +2,11 @@ import { useRef } from 'react'
 import Fact from './Fact'
 import { Fractal } from './fractal/Fractal'
 import { Girl } from './girl/Girl'
+import { Sky } from './sky/Sky'
 import { Snowflake } from './snowflake/Snowflake'
 
 export default function Home() {
+	let sunriseRef = useRef(null)
 	let crystalizeRef = useRef(null)
 	let danceRef = useRef(null)
 	let winterRef = useRef(null)
@@ -14,7 +16,8 @@ export default function Home() {
 			<Fact text='my least favorite number is 8 | its too symmetrical' />
 			<Fact text='my favorite animal is squid' />
 			<>
-				<Fact text='i use light mode' />
+				<Fact customRef={ sunriseRef } text='i use light mode' />
+				<Sky sunriseRef={ sunriseRef } />
 			</>
 			<Fact text='i like to play with knives' />
 			<>
