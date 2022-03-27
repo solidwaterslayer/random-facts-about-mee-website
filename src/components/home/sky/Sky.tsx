@@ -20,10 +20,10 @@ export function Sky({ sunriseRef }: any) {
     <div ref={ upRef }>
       <div ref={ downRef }>
         <div className='align-items-center d-flex justify-content-center position-fixed start-0 top-0' style={{ height: 0, width: 0, zIndex: -1, }}>
-          <img alt='' ref={ cloudRef } src={ CloudTexture } />
+          <img alt='' className='pe-none' ref={ cloudRef } src={ CloudTexture } />
         </div>
         <div className='align-items-center d-flex justify-content-center position-fixed start-0 top-0' style={{ height: 0, width: 0, zIndex: -1, }}>
-          <img alt='' ref={ sunRef } src={ SunTexture } />
+          <img alt='' className='pe-none' ref={ sunRef } src={ SunTexture } />
         </div>
       </div>
     </div>
