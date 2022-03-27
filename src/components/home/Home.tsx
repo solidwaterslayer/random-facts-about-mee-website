@@ -3,6 +3,7 @@ import Fact from './Fact'
 import { Fractal } from './fractal/Fractal'
 import { Girl } from './girl/Girl'
 import { Knife } from './knife/Knife'
+import { Letters } from './letters/Letters'
 import { Sky } from './sky/Sky'
 import { Snowflake } from './snowflake/Snowflake'
 import { Squid } from './squid/Squid'
@@ -13,6 +14,7 @@ export default function Home() {
 	let swimRef = useRef(null)
 	let zoomRef = useRef(null)
 	let sunriseRef = useRef(null)
+	let fightRef = useRef(null)
 	let throwRef = useRef(null)
 	let winterRef = useRef(null)
 
@@ -35,7 +37,8 @@ export default function Home() {
 
 			<Fact text='imm ambidextrous' />
 
-			<Fact text='i think capital letters are overrated | i dont know if you can tell' />
+			<Letters fightRef={ fightRef } />
+			<Fact customRef={ fightRef } text='i think capital letters are overrated | i dont know if you can tell' />
 
 			<Fact text='my least favorite number is 8 | its too symmetrical' />
 

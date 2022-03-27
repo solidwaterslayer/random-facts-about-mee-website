@@ -20,7 +20,7 @@ export default function Cube() {
 	}
 
 	return (
-		<Canvas style={{ left: 0, position: 'fixed', top: 0, zIndex: -1 }}>
+		<Canvas className='pe-none position-fixed start-0 top-0' style={{ zIndex: -1 }}>
 			<ambientLight />
 			<directionalLight />
 			<Cube />

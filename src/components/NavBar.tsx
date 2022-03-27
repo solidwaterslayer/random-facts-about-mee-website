@@ -6,7 +6,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap'
 import { Link, useLocation } from 'react-router-dom'
 
 export default function NavBar() {
-	let location = useLocation().pathname
+	let location: string = useLocation().pathname
   let [url, setURL] = useState(location)
 	let urlRef = useRef(null)
 
