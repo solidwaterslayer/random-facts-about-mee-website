@@ -1,6 +1,6 @@
 import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
-import SquidTexture from './SquidTexture0.webp'
+import SquidTexture from './SquidTexture.webp'
 
 export function Squid({ swimRef, zoomRef }: any) {
   let upRef = useRef(null)
