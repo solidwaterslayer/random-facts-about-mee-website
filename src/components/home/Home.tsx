@@ -61,35 +61,6 @@ export default function Home() {
 				<Snowflake winterRef={ winterRef } />
 				<Snowflake winterRef={ winterRef } />
 				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
-				<Snowflake winterRef={ winterRef } />
 			</>
 			<Fact customRef={ winterRef } text='my least favorite season is winter | when you are warm, you are unconfortable; but when you are cold, you are literally in pain' />
 		</>
