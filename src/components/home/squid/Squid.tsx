@@ -5,21 +5,26 @@ import SquidTexture from './SquidTexture0.webp'
 export function Squid({ swimRef, zoomRef }: any) {
   let upRef = useRef(null)
   let downRef = useRef(null)
-  let squidRef = useRef(null)
+  let swimmingRef = useRef(null)
+  let floatingRef = useRef(null)
+  let faceRef = useRef(null)
 
   useEffect(() => {
     gsap.to(upRef.current, { opacity: 0, scrollTrigger: { end: 'center -10%', scrub: true, start: 'center 40%', trigger: zoomRef.current, }, })
     gsap.from(downRef.current, { opacity: 0, scrollTrigger: { end: 'center 60%', scrub: true, start: 'center 110%', trigger: swimRef.current, }, })
     gsap.timeline({ repeat: -1, })
-    .to(squidRef.current, { duration: 3, x: '1vw', y: '-1vh' })
-    .to(squidRef.current, { duration: 4, x: '2vw', y: '1vw', })
-    .to(squidRef.current, { duration: 3, x: '0vw', y: '0vh' })
+    .to(floatingRef.current, { duration: 3, x: '1vw', y: '-1vh' })
+    .to(floatingRef.current, { duration: 4, x: '2vw', y: '1vw', })
+    .to(floatingRef.current, { duration: 3, x: '0vw', y: '0vh' })
+    gsap.to(faceRef.current, { scale: 2, scrollTrigger: { end: 'center 60%', scrub: true, start: 'center 110%', trigger: zoomRef.current, }, y: '40vh', })
 	})
 
   return (
-    <div className='align-items-center d-flex justify-content-center position-fixed' ref={ upRef } style={{ height: 0, left: '80vw', top: '50vh', width: 0, zIndex: -1, }}>
+    <div ref={ upRef }>
       <div ref={ downRef }>
-        <img alt='' ref={ squidRef } src={ SquidTexture } />
+        <div className='align-items-center d-flex justify-content-center pe-none position-fixed' ref={ floatingRef } style={{ height: 0, left: '80vw', top: '50vh', width: 0, zIndex: -1, }}>
+          <img alt='' ref={ faceRef } src={ SquidTexture } />
+        </div>
       </div>
     </div>
   )

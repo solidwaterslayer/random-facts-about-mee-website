@@ -14,7 +14,7 @@ export function Girl({ danceRef }: any) {
   return (
     <>
       <span ref={ upRef }>
-        <img alt='' className='bottom-0 end-0 position-fixed' ref={ downRef } src={ GirlTexture } />
+        <img alt='' className='bottom-0 end-0 pe-none position-fixed' ref={ downRef } src={ GirlTexture } />
       </span>
     </>
   )
