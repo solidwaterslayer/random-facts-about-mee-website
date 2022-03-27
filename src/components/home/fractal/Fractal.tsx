@@ -1,6 +1,6 @@
 import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
-import FractalTexture from './FractalTexture.png'
+import FractalTexture from './FractalTexture0.png'
 
 export function Fractal({ crystalizeRef }: any) {
   let upRef = useRef(null)
@@ -10,7 +10,7 @@ export function Fractal({ crystalizeRef }: any) {
   useEffect(() => {
     gsap.to(upRef.current, { opacity: 0, scrollTrigger: { end: 'center -10%', scrub: true, start: 'center 40%', trigger: crystalizeRef.current, }, })
     gsap.from(downRef.current, { opacity: 0, scrollTrigger: { end: 'center 60%', scrub: true, start: 'center 110%', trigger: crystalizeRef.current, }, })
-    gsap.fromTo(fractalRef.current, { scale: .6, }, { duration: 8, ease: 'linear', repeat: -1, rotation: 360, scrollTrigger: { end: 'center -10%', start: 'center 110%', toggleActions: 'resume pause resume pause', trigger: crystalizeRef.current, }, })
+    gsap.fromTo(fractalRef.current, { scale: .6, }, { duration: 16, ease: 'linear', repeat: -1, rotation: 360, scrollTrigger: { end: 'center -10%', start: 'center 110%', toggleActions: 'resume pause resume pause', trigger: crystalizeRef.current, }, })
 	})
 
   return (

@@ -1,6 +1,6 @@
 import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
-import KnifeTexture from './Knife.png'
+import KnifeTexture from './KnifeTexture.png'
 
 export function Knife({ throwRef }: any) {
   let upRef = useRef(null)
