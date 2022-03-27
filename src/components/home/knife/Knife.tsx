@@ -1,6 +1,6 @@
 import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
-import CloudTexture from './Knife.png'
+import KnifeTexture from './Knife.png'
 
 export function Knife({ throwRef }: any) {
   let upRef = useRef(null)
@@ -16,7 +16,7 @@ export function Knife({ throwRef }: any) {
   return (
     <div className='align-items-center d-flex justify-content-center position-fixed start-0 top-0' ref={ upRef } style={{ height: 0, width: 0, zIndex: -1, }}>
       <div ref={ downRef }>
-        <img alt='' ref={ knifeRef } src={ CloudTexture } />
+        <img alt='' ref={ knifeRef } src={ KnifeTexture } />
       </div>
     </div>
   )

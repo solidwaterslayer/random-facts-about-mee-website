@@ -5,10 +5,13 @@ import { Girl } from './girl/Girl'
 import { Knife } from './knife/Knife'
 import { Sky } from './sky/Sky'
 import { Snowflake } from './snowflake/Snowflake'
+import { Squid } from './squid/Squid'
 
 export default function Home() {
 	let danceRef = useRef(null)
 	let crystalizeRef = useRef(null)
+	let swimRef = useRef(null)
+	let zoomRef = useRef(null)
 	let sunriseRef = useRef(null)
 	let throwRef = useRef(null)
 	let winterRef = useRef(null)
@@ -23,8 +26,9 @@ export default function Home() {
 			<Fractal crystalizeRef={ crystalizeRef } />
 			<Fact customRef={ crystalizeRef } text='my favorite shape is snowflake' />
 
-			<Fact text='my favorite animal is squid' />
-			<Fact text='my favorite number is 9' />
+			<Squid swimRef={ swimRef } zoomRef={ zoomRef } />
+			<Fact customRef={ swimRef } text='my favorite animal is squid' />
+			<Fact customRef={ zoomRef } text='my favorite number is 9' />
 
 			<Sky sunriseRef={ sunriseRef } />
 			<Fact customRef={ sunriseRef } text='i use light mode' />
