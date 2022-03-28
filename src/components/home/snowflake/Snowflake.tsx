@@ -19,7 +19,7 @@ export function Snowflake({ winterRef }: any) {
 	})
 
   return (
-    <div ref={ upRef } className='align-items-center d-flex justify-content-center pe-none position-fixed start-0 top-0' style={{ height: 0, width: 0, zIndex: -1, }}>
+    <div ref={ upRef } className='image start-0 top-0'>
       <div ref={ downRef }>
         <div ref={ snowflakeRef }>
           <FontAwesomeIcon className={ Math.random() < .7 ? 'text-light' : 'text-danger' } icon={ faSnowflake } />

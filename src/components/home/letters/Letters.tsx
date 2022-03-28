@@ -39,16 +39,16 @@ export function Letters({ fightRef }: any) {
         <div className='bottom-0 d-inline pe-none position-fixed text-danger' ref={ jumpingRef }>
           <h1 ref={ standingRef } style={{ lineHeight: .2, zIndex: -1 }}>n</h1>
         </div>
-        <div className='align-items-center d-flex justify-content-center pe-none position-fixed' style={{ height: 0, left: '80vw', top: '90vh', width: 0, zIndex: -1, }}>
+        <div className='image' style={{ left: '80vw', top: '90vh', }}>
           <img alt='' ref={ attackRef } src={ AttackTexture } style={{ opacity: 0, transform: 'scale(-1)', }} />
         </div>
         <div className='bottom-0 d-inline pe-none position-fixed start-0 text-danger'>
           <h1 ref={ flyingRef } style={{ lineHeight: .2, zIndex: -1 }}>N</h1>
         </div>
-        <div className='align-items-center d-flex justify-content-center pe-none position-fixed' style={{ height: 0, left: '20vw', top: '15vh', width: 0, zIndex: -1, }}>
+        <div className='image' style={{ left: '20vw', top: '15vh', }}>
           <img alt='' ref={ explosionRef } src={ ExplosionTexture } style={{ opacity: 0, transform: 'scaleY(-1)', }} />
         </div>
-        <div className='align-items-center d-flex justify-content-center pe-none position-fixed' style={{ height: 0, left: '20vw', top: '15vh', width: 0, zIndex: -1, }}>
+        <div className='image' style={{ left: '20vw', top: '15vh', }}>
           <img alt='' ref={ fireRef } src={ FireTexture } style={{ opacity: 0, transform: 'scaleY(-1)', }} />
         </div>
       </div>

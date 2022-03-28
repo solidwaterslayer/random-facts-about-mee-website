@@ -23,10 +23,10 @@ export function Squid({ swimRef, zoomRef }: any) {
   return (
     <div ref={ upRef }>
       <div ref={ downRef }>
-        <div className='align-items-center d-flex justify-content-center pe-none position-fixed start-0 top-100' ref={ floatingRef } style={{ height: 0, width: 0, zIndex: -1, }}>
+        <div className='image start-0 top-100' ref={ floatingRef }>
           <img alt='' ref={ swimmingRef } src={ SquidTexture } />
         </div>
-        <div className='align-items-center d-flex justify-content-center pe-none position-fixed' ref={ floatingRef } style={{ height: 0, left: '80vw', top: '50vh', width: 0, zIndex: -1, }}>
+        <div className='image' ref={ floatingRef } style={{ left: '80vw', top: '50vh', }}>
           <img alt='' ref={ lookingRef } src={ SquidTexture } />
         </div>
       </div>

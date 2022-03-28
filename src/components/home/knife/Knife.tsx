@@ -14,7 +14,7 @@ export function Knife({ throwRef }: any) {
 	})
 
   return (
-    <div className='align-items-center d-flex justify-content-center pe-none position-fixed start-0 top-0' ref={ upRef } style={{ height: 0, width: 0, zIndex: -1, }}>
+    <div className='image start-0 top-0' ref={ upRef }>
       <div ref={ downRef }>
         <img alt='' ref={ knifeRef } src={ KnifeTexture } />
       </div>

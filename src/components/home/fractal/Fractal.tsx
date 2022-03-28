@@ -1,6 +1,7 @@
 import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
 import FractalTexture from './FractalTexture.png'
+import '../../../index.css'
 
 export function Fractal({ crystalizeRef }: any) {
   let upRef = useRef(null)
@@ -14,7 +15,7 @@ export function Fractal({ crystalizeRef }: any) {
 	})
 
   return (
-    <div className='align-items-center d-flex justify-content-center pe-none position-fixed start-50 top-50' ref={ upRef } style={{ height: 0, width: 0, zIndex: -1, }}>
+    <div className='image start-50 top-50' ref={ upRef }>
       <div ref={ downRef }>
         <img alt='' ref={ fractalRef } src={ FractalTexture } />
       </div>

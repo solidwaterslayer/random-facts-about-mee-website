@@ -1,7 +1,7 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import '../../index.css'
 import { useEffect, useRef } from 'react'
+import '../../index.css'
 
 export default function Fact({ customRef, text }: any) {
   gsap.registerPlugin(ScrollTrigger)
@@ -16,8 +16,8 @@ export default function Fact({ customRef, text }: any) {
 	return (
     <div className='hover my-5 py-5' ref={ upRef }>
       <div className='my-5 py-5' ref={ downRef }>
-        <h1 className={ Math.random() < .7 ? 'mt-5 pt-5 text-light' : 'mt-5 pt-5 text-danger' } ref={ customRef }>{ text.split(' | ')[0] }</h1>
-        <p className='mb-5 pb-5 text-secondary'>{ text.split(' | ')[1] }</p>
+        <h1 className={ Math.random() < .7 ? 'mt-5 pt-5 text-light' : 'mt-5 pt-5 text-danger' } ref={ customRef } style={{ lineHeight: 1.6, }}>{ text.split(' | ')[0] }</h1>
+        <p className='mb-5 pb-5 text-secondary' style={{ lineHeight: 2, }}>{ text.split(' | ')[1] }</p>
       </div>
     </div>
 	)
