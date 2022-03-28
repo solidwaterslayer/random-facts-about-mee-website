@@ -28,7 +28,7 @@ export function Letters({ fightRef }: any) {
     .to(jumpingRef.current, { duration: .1, ease: 'linear', x: '35vw', y: '-5vh', })
     .to(jumpingRef.current, { duration: .1, ease: 'bounce', x: '40vw', y: '0vh', })
     gsap.timeline({ delay: 2.7, scrollTrigger: { end: 'center -10%', start: 'center 110%', toggleActions: 'play reset play reset', trigger: fightRef.current, }, }).to(attackRef.current, { ease: 'power4', opacity: 1, }).to(attackRef.current, { opacity: 0, })
-    gsap.fromTo(flyingRef.current, { x: '80vw', y: '98vh', }, { delay: 3, duration: .1, scrollTrigger: { end: 'center -10%', start: 'center 110%', toggleActions: 'play reset play reset', trigger: fightRef.current, }, x: '20vw', y: '-3vh', })
+    gsap.fromTo(flyingRef.current, { x: '80vw', }, { delay: 3, duration: .1, scrollTrigger: { end: 'center -10%', start: 'center 110%', toggleActions: 'play reset play reset', trigger: fightRef.current, }, x: '20vw', y: '-100vh', })
     gsap.timeline({ delay: 3.2, scrollTrigger: { end: 'center -10%', start: 'center 110%', toggleActions: 'play reset play reset', trigger: fightRef.current, }, }).to(explosionRef.current, { opacity: 1, }).to(explosionRef.current, { opacity: 0, })
     gsap.to(fireRef.current, { delay: 3.5, opacity: 1, scrollTrigger: { end: 'center -10%', start: 'center 110%', toggleActions: 'play reset play reset', trigger: fightRef.current, }, })
 	})
@@ -42,7 +42,7 @@ export function Letters({ fightRef }: any) {
         <div className='align-items-center d-flex justify-content-center pe-none position-fixed' style={{ height: 0, left: '80vw', top: '90vh', width: 0, zIndex: -1, }}>
           <img alt='' ref={ attackRef } src={ AttackTexture } style={{ opacity: 0, transform: 'scale(-1)', }} />
         </div>
-        <div className='d-inline pe-none position-fixed start-0 text-danger top-0'>
+        <div className='bottom-0 d-inline pe-none position-fixed start-0 text-danger'>
           <h1 ref={ flyingRef } style={{ lineHeight: .2, zIndex: -1 }}>N</h1>
         </div>
         <div className='align-items-center d-flex justify-content-center pe-none position-fixed' style={{ height: 0, left: '20vw', top: '15vh', width: 0, zIndex: -1, }}>
