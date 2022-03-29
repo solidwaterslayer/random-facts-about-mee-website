@@ -1,8 +1,8 @@
-.hover {
+.hover-activator .hover-target {
   transition: 250ms;
 }
 
-.hover:hover {
+.hover-activator:hover .hover-target {
   transform: translateY(-5px);
   text-shadow: 1px 1px 8px #dc3545;
 }
