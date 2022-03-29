@@ -6,7 +6,7 @@
       "src": "favicon.ico",
       "type": "image/x-icon"
     }, {
-      "src": "favicon.png",
+      "src": "apple-touch-icon.png",
       "type": "image/png"
     }
   ],
