@@ -22,6 +22,8 @@ export default function Home() {
 		<div className='mx-0 row'>
 			<div className='col-md-3'></div>
 			<div className='border-danger border-start col-md-9 col-sm-12'>
+				<Fact text='hello world!! OwO | scroll slowly; there are 7 scenes; to rewatch a scene, scroll away then scroll back;' />
+
 				<Fact text='my favorite color is red' />
 
 				<Girl danceRef={ danceRef } />
