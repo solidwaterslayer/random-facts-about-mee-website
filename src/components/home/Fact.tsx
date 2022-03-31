@@ -1,10 +1,8 @@
 import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useEffect, useRef } from 'react'
 import '../../index.css'
 
 export default function Fact({ customRef, text }: any) {
-  gsap.registerPlugin(ScrollTrigger)
   let upRef = useRef(null)
   let downRef = useRef(null)
 

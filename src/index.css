@@ -17,3 +17,10 @@
   width: 0;
   z-index: -1;
 }
+
+.banner {
+  height: 90vh;
+  position: sticky;
+  top: 7vh;
+  z-index: -1;
+}
