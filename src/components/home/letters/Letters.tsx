@@ -1,8 +1,8 @@
 import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
-import AttackTexture from './AttackTexture.gif'
-import ExplosionTexture from './ExplosionTexture.gif'
-import FireTexture from './FireTexture.gif'
+import AttackTexture from './attack-texture.gif'
+import ExplosionTexture from './explosion-texture.gif'
+import FireTexture from './fire-texture.gif'
 
 function fade(fightRef: any, upRef: any, downRef: any, jitteringRef: any, jumpingRef: any, attackRef: any, flyingRef: any, explosionRef: any, fireRef: any) {
   gsap.to(upRef.current, { opacity: 0, scrollTrigger: { end: 'center -10%', scrub: true, start: 'center 40%', trigger: fightRef.current, }, })

@@ -1,6 +1,6 @@
 import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
-import SquidTexture from './SquidTexture.webp'
+import SquidTexture from './squid-texture.webp'
 
 function fade(swimRef: any, zoomRef: any, upRef: any, downRef: any, swimmingRef: any, jitteringRef: any, lookingRef: any) {
   gsap.to(upRef.current, { opacity: 0, scrollTrigger: { end: 'center -10%', scrub: true, start: 'center 40%', trigger: zoomRef.current, }, })

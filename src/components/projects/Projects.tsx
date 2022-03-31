@@ -6,25 +6,22 @@ export default function Projects() {
 		<>
 			<div>
 				<div className='banner bg-gradient bg-secondary'>
-					<video src={ randomFactsAboutMeeWebsite } />
+					<video autoPlay loop muted src={ randomFactsAboutMeeWebsite } style={{ height: '400px', }} />
 				</div>
-				<div className='banner bg-dark bg-gradient'>b</div>
-				<div className='banner bg-danger bg-gradient'>d</div>
-				<div className='banner bg-gradient bg-light'>a</div>
+				<div className='banner bg-dark bg-gradient'>imm currently working on this page</div>
+				<div className='banner bg-danger bg-gradient'>imm currently working on this page</div>
+				<div className='banner bg-gradient bg-light'>imm currently working on this page</div>
 			</div>
-			<div className='text-danger'>3</div>
-			<div className='text-danger'>3</div>
-			<div className='text-danger'>3</div>
-			<div className='text-danger'>3</div>
-			<div className='text-danger'>3</div>
-			<div className='text-danger'>3</div>
-			<div className='text-danger'>3</div>
-			<div className='text-danger'>3</div>
-			<div className='text-danger'>3</div>
-			<div className='text-danger'>3</div>
-			<div className='text-danger'>3</div>
-			<div className='text-danger'>3</div>
-			<div className='text-danger'>3</div>
+			<div className='text-danger'>imm currently working on this page</div>
+			<div className='text-danger'>imm currently working on this page</div>
+			<div className='text-danger'>imm currently working on this page</div>
+			<div className='text-danger'>imm currently working on this page</div>
+			<div className='text-danger'>imm currently working on this page</div>
+			<div className='text-danger'>imm currently working on this page</div>
+			<div className='text-danger'>imm currently working on this page</div>
+			<div className='text-danger'>imm currently working on this page</div>
+			<div className='text-danger'>imm currently working on this page</div>
+			<div className='text-danger'>imm currently working on this page</div>
 		</>
 	)
 }

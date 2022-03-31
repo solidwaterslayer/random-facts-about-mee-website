@@ -1,6 +1,6 @@
 import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
-import GirlTexture from './GirlTexture.gif'
+import GirlTexture from './girl-texture.gif'
 
 export function Girl({ danceRef }: any) {
   let upRef = useRef(null)

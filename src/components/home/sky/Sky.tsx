@@ -1,7 +1,7 @@
 import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
-import CloudTexture from './CloudTexture.png'
-import SunTexture from './SunTexture.png'
+import CloudTexture from './cloud-texture.png'
+import SunTexture from './sun-texture.png'
 
 export function Sky({ sunriseRef }: any) {
   let upRef = useRef(null)
