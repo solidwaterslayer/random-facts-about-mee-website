@@ -23,9 +23,9 @@ export default function NavBar() {
 				<Navbar.Collapse id='responsive-navbar-nav'>
 					<Nav className='me-auto' />
 					<Nav className='me-2'>
-						<Nav.Link as={ Link } className={ !['/projects', '/about'].includes(url) ? 'active nav-link' : 'nav-link' } eventKey={ 0 } to=''>home</Nav.Link>
-						<Nav.Link as={ Link } className={ url === '/projects' ? 'active nav-link' : 'nav-link' } eventKey={ 1 } to='projects'>projects</Nav.Link>
-						<Nav.Link as={ Link } className={ url === '/about' ? 'active nav-link' : 'nav-link' } eventKey={ 2 } to='about'>about</Nav.Link>
+						<Nav.Link as={ Link } className={ 'nav-link ' + (!['/projects', '/about'].includes(url) ? 'active' : '') } eventKey={ 0 } to=''>home</Nav.Link>
+						<Nav.Link as={ Link } className={ 'nav-link ' + (url === '/projects' ? 'active' : '') } eventKey={ 1 } to='projects'>projects</Nav.Link>
+						<Nav.Link as={ Link } className={ 'nav-link ' + (url === '/about' ? 'active' : '') } eventKey={ 2 } to='about'>about</Nav.Link>
 					</Nav>
 					<div className='my-2'>
 						<Navbar.Brand>
