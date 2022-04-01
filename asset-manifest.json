@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/random-facts-about-mee-website/static/css/main.2fdf6138.css",
-    "main.js": "/random-facts-about-mee-website/static/js/main.994afeb7.js",
+    "main.js": "/random-facts-about-mee-website/static/js/main.19f4db11.js",
     "static/js/787.b967604c.chunk.js": "/random-facts-about-mee-website/static/js/787.b967604c.chunk.js",
     "static/media/cloud-texture.png": "/random-facts-about-mee-website/static/media/cloud-texture.fe781bb578edeeff063f.png",
     "static/media/virtual-pet.mp4": "/random-facts-about-mee-website/static/media/virtual-pet.c5837ef9ef231336f57d.mp4",
@@ -19,11 +19,11 @@
     "static/media/knife-texture.png": "/random-facts-about-mee-website/static/media/knife-texture.5350e0ec2341bc10dbc3.png",
     "index.html": "/random-facts-about-mee-website/index.html",
     "main.2fdf6138.css.map": "/random-facts-about-mee-website/static/css/main.2fdf6138.css.map",
-    "main.994afeb7.js.map": "/random-facts-about-mee-website/static/js/main.994afeb7.js.map",
+    "main.19f4db11.js.map": "/random-facts-about-mee-website/static/js/main.19f4db11.js.map",
     "787.b967604c.chunk.js.map": "/random-facts-about-mee-website/static/js/787.b967604c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2fdf6138.css",
-    "static/js/main.994afeb7.js"
+    "static/js/main.19f4db11.js"
   ]
 }
