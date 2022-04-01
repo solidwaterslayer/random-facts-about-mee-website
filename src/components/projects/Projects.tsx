@@ -1,10 +1,12 @@
+import { faBaseball, faCat, faDice, faGem, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { Tab, Row, Col, Nav } from 'react-bootstrap'
 import Banner from './Banner'
 import ballGame from './ball-game.mp4'
 import diamondCollectingGame from './diamond-collecting-game.mp4'
 import paperPushingGame from './paper-pushing-game.mp4'
 import randomFactsAboutMeeWebsite from './random-facts-about-mee-website.mp4'
+import TabItem from './TabItem'
 import virtualPet from './virtual-pet.mp4'
-import { Tab, Row, Col, Nav } from 'react-bootstrap'
 
 export default function Projects() {
 	return (
@@ -22,22 +24,25 @@ export default function Projects() {
 					<div className='col-md-2'></div>
 					<div className='col-md-8 col-sm-12' style={{ height: '90vh', }}>
 						<div style={{ height: '15vh', }}></div>
-						<Tab.Container defaultActiveKey='first'>
+						<Tab.Container defaultActiveKey={ 0 }>
 							<Row>
 								<Col sm={ 3 }>
 									<Nav className='flex-column mb-3' variant='tabs'>
-										<Nav.Item className='mb-3'><Nav.Link className='text-danger' eventKey='first'>Tab 1</Nav.Link></Nav.Item>
-										<Nav.Item className='mb-3'><Nav.Link className='text-danger' eventKey='second'>Tab 2</Nav.Link></Nav.Item>
+										<TabItem eventKey={ 0 } icon={ faDice } text='Random Facts About Mee Website'></TabItem>
+										<TabItem eventKey={ 1 } icon={ faGem } text='Diamond Collecting Game'></TabItem>
+										<TabItem eventKey={ 2 } icon={ faPaperPlane } text='Paper Pushing Game'></TabItem>
+										<TabItem eventKey={ 3 } icon={ faCat } text='Virtual Pet'></TabItem>
+										<TabItem eventKey={ 4 } icon={ faBaseball } text='Ball Game'></TabItem>
 									</Nav>
 								</Col>
 								<Col sm={ 9 }>
 									<Tab.Content>
-										<Tab.Pane eventKey='first'>
+										<Tab.Pane eventKey={ 0 }>
 											<p className='text-light'>
 												djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji
 											</p>
 										</Tab.Pane>
-										<Tab.Pane eventKey='second'>
+										<Tab.Pane eventKey={ 1 }>
 											<p className='text-light'>
 												sidfjsidjfi djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji
 											</p>
