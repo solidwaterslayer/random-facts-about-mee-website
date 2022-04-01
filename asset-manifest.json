@@ -1,25 +1,29 @@
 {
   "files": {
     "main.css": "/random-facts-about-mee-website/static/css/main.2fdf6138.css",
-    "main.js": "/random-facts-about-mee-website/static/js/main.4d7d8d00.js",
+    "main.js": "/random-facts-about-mee-website/static/js/main.ea930446.js",
     "static/js/787.b967604c.chunk.js": "/random-facts-about-mee-website/static/js/787.b967604c.chunk.js",
     "static/media/cloud-texture.png": "/random-facts-about-mee-website/static/media/cloud-texture.fe781bb578edeeff063f.png",
+    "static/media/virtual-pet.mp4": "/random-facts-about-mee-website/static/media/virtual-pet.c5837ef9ef231336f57d.mp4",
+    "static/media/diamond-collecting-game.mp4": "/random-facts-about-mee-website/static/media/diamond-collecting-game.3604a3ee339455c37452.mp4",
     "static/media/fractal-texture.png": "/random-facts-about-mee-website/static/media/fractal-texture.fc4f8a71ceedb4df5395.png",
     "static/media/girl-texture.gif": "/random-facts-about-mee-website/static/media/girl-texture.31f45c9f9e96acccdaba.gif",
+    "static/media/ball-game.mp4": "/random-facts-about-mee-website/static/media/ball-game.bb652785675f6b0300c0.mp4",
     "static/media/random-facts-about-mee-website.mp4": "/random-facts-about-mee-website/static/media/random-facts-about-mee-website.3bf2552e73b775e3326a.mp4",
     "static/media/squid-texture.webp": "/random-facts-about-mee-website/static/media/squid-texture.c9edb07850dd1cc15218.webp",
     "static/media/attack-texture.gif": "/random-facts-about-mee-website/static/media/attack-texture.71f92878beae9ad01b7f.gif",
     "static/media/sun-texture.png": "/random-facts-about-mee-website/static/media/sun-texture.ca2361d80433911040a2.png",
     "static/media/explosion-texture.gif": "/random-facts-about-mee-website/static/media/explosion-texture.3ed8b53aba9f195b254f.gif",
+    "static/media/paper-pushing-game.mp4": "/random-facts-about-mee-website/static/media/paper-pushing-game.93bc309adf528fcfe579.mp4",
     "static/media/fire-texture.gif": "/random-facts-about-mee-website/static/media/fire-texture.b206507d06863dcac218.gif",
     "static/media/knife-texture.png": "/random-facts-about-mee-website/static/media/knife-texture.5350e0ec2341bc10dbc3.png",
     "index.html": "/random-facts-about-mee-website/index.html",
     "main.2fdf6138.css.map": "/random-facts-about-mee-website/static/css/main.2fdf6138.css.map",
-    "main.4d7d8d00.js.map": "/random-facts-about-mee-website/static/js/main.4d7d8d00.js.map",
+    "main.ea930446.js.map": "/random-facts-about-mee-website/static/js/main.ea930446.js.map",
     "787.b967604c.chunk.js.map": "/random-facts-about-mee-website/static/js/787.b967604c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2fdf6138.css",
-    "static/js/main.4d7d8d00.js"
+    "static/js/main.ea930446.js"
   ]
 }
