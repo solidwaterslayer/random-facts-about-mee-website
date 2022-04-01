@@ -1,6 +1,5 @@
 import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
-import '../../index.css'
 
 export default function Fact({ customRef, text }: any) {
   let upRef = useRef(null)

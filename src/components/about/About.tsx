@@ -1,7 +1,6 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faMailBulk, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import '../../index.css'
 import Cube from './Cube'
 
 export default function About() {

@@ -1,5 +1,3 @@
-import '../../index.css'
-
 export default function Banner({ theme, isVideoLeft, video, title }: any) {
 	return (
     <div className={ 'banner bg-gradient ' + theme }>

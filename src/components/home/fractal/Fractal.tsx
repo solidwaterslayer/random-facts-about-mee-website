@@ -1,7 +1,6 @@
 import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
 import FractalTexture from './fractal-texture.png'
-import '../../../index.css'
 
 export function Fractal({ crystalizeRef }: any) {
   let upRef = useRef(null)
