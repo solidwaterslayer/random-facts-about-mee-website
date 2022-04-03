@@ -13,12 +13,12 @@ export default function Projects() {
 	return (
 		<>
 			<div>
-				<div className='banner banner-title bg-gradient bg-secondary justify-content-center text-light' style={{ textShadow: '1px 1px 8px #dc3545', }}>Here's A Curated List Of My Previous Projects</div>
-				<Banner theme='bg-dark text-light' isVideoLeft={ false } video={ randomFactsAboutMeeWebsite } title='[4th] Random Facts About Mee Website'></Banner>
-				<Banner theme='bg-light text-danger' isVideoLeft={ true } video={ diamondCollectingGame } title='[3rd] Diamond Collecting Game'></Banner>
-				<Banner theme='bg-danger text-light' isVideoLeft={ false } video={ paperPushingGame } title='[2nd] Paper Pushing Game'></Banner>
-				<Banner theme='bg-dark text-light' isVideoLeft={ true } video={ virtualPet } title='[1st] Virtual Pet'></Banner>
-				<Banner theme='bg-secondary text-light' isVideoLeft={ false } video={ ballGame } title='[0th] Ball Game'></Banner>
+				<div className='banner banner-text bg-gradient bg-secondary justify-content-center text-light' style={{ textShadow: '1px 1px 8px #dc3545', }}>Here's A Curated List Of My Previous Projects</div>
+				<Banner theme='bg-dark text-light' isVideoLeft={ false } video={ randomFactsAboutMeeWebsite } text='[4th] Random Facts About Mee Website'></Banner>
+				<Banner theme='bg-light text-danger' isVideoLeft={ true } video={ diamondCollectingGame } text='[3rd] Diamond Collecting Game'></Banner>
+				<Banner theme='bg-danger text-light' isVideoLeft={ false } video={ paperPushingGame } text='[2nd] Paper Pushing Game'></Banner>
+				<Banner theme='bg-dark text-light' isVideoLeft={ true } video={ virtualPet } text='[1st] Virtual Pet'></Banner>
+				<Banner theme='bg-secondary text-light' isVideoLeft={ false } video={ ballGame } text='[0th] Ball Game'></Banner>
 			</div>
 			<div>
 				<div className='mx-0 row'>
