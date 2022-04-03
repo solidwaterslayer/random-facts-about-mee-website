@@ -39,12 +39,12 @@ export default function Projects() {
 								<Col sm={ 9 }>
 									<Tab.Content>
 										<Tab.Pane className='hover-activator' eventKey={ 0 }>
-											<h1 className='hover-target text-light' style={{ lineHeight: 1.6, }}>Overview</h1>
-											<p className='hover-target text-danger' style={{ lineHeight: 2, }}>
-												write mee later OwO
-											</p>
-											<h2 className='hover-target text-light' style={{ lineHeight: 1.6, }}>Running Instance | Link To Project</h2>
-											<a className='text-secondary text-decoration-none' href='https://solidwaterslayer.github.io/random-facts-about-mee-website/' rel='noreferrer noopener' style={{ lineHeight: 2, }} target='_blank'>
+											<h1 className='h-line-height hover-target text-light'>Overview</h1>
+											<p className='hover-target p-line-height text-danger'>
+												write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO
+ 											</p>
+											<h2 className='h-line-height hover-target text-light'>Running Instance | Link To Project</h2>
+											<a className='p-line-height text-secondary text-decoration-none' href='https://solidwaterslayer.github.io/random-facts-about-mee-website/' rel='noreferrer noopener' target='_blank'>
 												https://solidwaterslayer.github.io/random-facts-about-mee-website/
 												<FontAwesomeIcon className='ps-3' icon={ faUpRightFromSquare } />
 											</a>

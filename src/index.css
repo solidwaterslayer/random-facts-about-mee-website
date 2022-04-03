@@ -7,6 +7,14 @@
   text-shadow: 1px 1px 8px #dc3545;
 }
 
+.h-line-height {
+  line-height: 1.6;
+}
+
+.p-line-height {
+  line-height: 2;
+}
+
 .image {
   align-items: center;
   display: flex;

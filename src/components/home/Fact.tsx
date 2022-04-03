@@ -13,8 +13,8 @@ export default function Fact({ customRef, text }: any) {
 	return (
     <div className='hover-activator my-5 py-5' ref={ upRef }>
       <div className='hover-target my-5 py-5' ref={ downRef }>
-        <h1 className={ Math.random() < .7 ? 'mt-5 pt-5 text-light' : 'mt-5 pt-5 text-danger' } ref={ customRef } style={{ lineHeight: 1.6, }}>{ text.split(' | ')[0] }</h1>
-        <p className='mb-5 pb-5 text-secondary' style={{ lineHeight: 2, }}>{ text.split(' | ')[1] }</p>
+        <h1 className={ 'h-line-height mt-5 pt-5 ' + (Math.random() < .7 ? 'text-light' : 'text-danger') } ref={ customRef }>{ text.split(' | ')[0] }</h1>
+        <p className='mb-5 pb-5 p-line-height text-secondary'>{ text.split(' | ')[1] }</p>
       </div>
     </div>
 	)
