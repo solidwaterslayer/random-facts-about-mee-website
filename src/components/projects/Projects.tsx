@@ -1,4 +1,5 @@
-import { faBaseball, faCat, faDice, faGem, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faBaseball, faCat, faDice, faGem, faPaperPlane, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Tab, Row, Col, Nav } from 'react-bootstrap'
 import Banner from './Banner'
 import ballGame from './ball-game.mp4'
@@ -37,10 +38,16 @@ export default function Projects() {
 								</Col>
 								<Col sm={ 9 }>
 									<Tab.Content>
-										<Tab.Pane eventKey={ 0 }>
-											<p className='text-light'>
-												djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji
+										<Tab.Pane className='hover-activator' eventKey={ 0 }>
+											<h1 className='hover-target text-light' style={{ lineHeight: 1.6, }}>Overview</h1>
+											<p className='hover-target text-danger' style={{ lineHeight: 2, }}>
+												write mee later OwO
 											</p>
+											<h2 className='hover-target text-light' style={{ lineHeight: 1.6, }}>Running Instance | Link To Project</h2>
+											<a className='text-secondary text-decoration-none' href='https://solidwaterslayer.github.io/random-facts-about-mee-website/' rel='noreferrer noopener' style={{ lineHeight: 2, }} target='_blank'>
+												https://solidwaterslayer.github.io/random-facts-about-mee-website/
+												<FontAwesomeIcon className='ps-3' icon={ faUpRightFromSquare } />
+											</a>
 										</Tab.Pane>
 										<Tab.Pane eventKey={ 1 }>
 											<p className='text-light'>
