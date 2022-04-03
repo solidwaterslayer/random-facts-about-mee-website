@@ -2,12 +2,12 @@ import { faBaseball, faCat, faDice, faGem, faPaperPlane, faUpRightFromSquare } f
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Tab, Row, Col, Nav } from 'react-bootstrap'
 import Banner from './Banner'
-import ballGame from './ball-game.mp4'
-import diamondCollectingGame from './diamond-collecting-game.mp4'
-import paperPushingGame from './paper-pushing-game.mp4'
-import randomFactsAboutMeeWebsite from './random-facts-about-mee-website.mp4'
 import TabItem from './TabItem'
-import virtualPet from './virtual-pet.mp4'
+import ballGame from './videos/ball-game.mp4'
+import diamondCollectingGame from './videos/diamond-collecting-game.mp4'
+import paperPushingGame from './videos/paper-pushing-game.mp4'
+import randomFactsAboutMeeWebsite from './videos/random-facts-about-mee-website.mp4'
+import virtualPet from './videos/virtual-pet.mp4'
 
 export default function Projects() {
 	return (
