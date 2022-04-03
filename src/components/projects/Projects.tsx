@@ -1,7 +1,7 @@
-import { faBaseball, faCat, faDice, faGem, faPaperPlane, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBaseball, faCat, faDice, faEllipsis, faGem, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { Tab, Row, Col, Nav } from 'react-bootstrap'
 import Banner from './Banner'
+import { TabContent } from './TabContent'
 import TabItem from './TabItem'
 import ballGame from './videos/ball-game.mp4'
 import diamondCollectingGame from './videos/diamond-collecting-game.mp4'
@@ -21,10 +21,10 @@ export default function Projects() {
 				<Banner theme='bg-secondary text-light' isVideoLeft={ false } video={ ballGame } text='[0th] Ball Game'></Banner>
 			</div>
 			<div>
-				<div className='mx-0 row'>
+				<div className='mx-0 my-5 row'>
 					<div className='col-md-2'></div>
-					<div className='col-md-8 col-sm-12' style={{ height: '90vh', }}>
-						<div style={{ height: '15vh', }}></div>
+					<div className='col-md-8 col-sm-12'>
+						<div></div>
 						<Tab.Container defaultActiveKey={ 0 }>
 							<Row>
 								<Col sm={ 3 }>
@@ -34,26 +34,41 @@ export default function Projects() {
 										<TabItem eventKey={ 2 } icon={ faPaperPlane } text='Paper Pushing Game'></TabItem>
 										<TabItem eventKey={ 3 } icon={ faCat } text='Virtual Pet'></TabItem>
 										<TabItem eventKey={ 4 } icon={ faBaseball } text='Ball Game'></TabItem>
+										<TabItem eventKey={ 5 } icon={ faEllipsis } text='And More!!'></TabItem>
 									</Nav>
 								</Col>
 								<Col sm={ 9 }>
 									<Tab.Content>
-										<Tab.Pane className='hover-activator' eventKey={ 0 }>
-											<h1 className='h-line-height hover-target text-light'>Overview</h1>
-											<p className='hover-target p-line-height text-danger'>
-												write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO write mee later OwO
- 											</p>
-											<h2 className='h-line-height hover-target text-light'>Running Instance | Link To Project</h2>
-											<a className='p-line-height text-secondary text-decoration-none' href='https://solidwaterslayer.github.io/random-facts-about-mee-website/' rel='noreferrer noopener' target='_blank'>
-												https://solidwaterslayer.github.io/random-facts-about-mee-website/
-												<FontAwesomeIcon className='ps-3' icon={ faUpRightFromSquare } />
-											</a>
-										</Tab.Pane>
-										<Tab.Pane eventKey={ 1 }>
-											<p className='text-light'>
-												sidfjsidjfi djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji djsiafji
-											</p>
-										</Tab.Pane>
+										<TabContent
+											eventKey={ 0 }
+											text='This is my 4th project [2022]. I started this project to learn about javascript animations, UI|UX, responsiveness, accessibility, and react.'
+											link='https://solidwaterslayer.github.io/random-facts-about-mee-website/'
+										/>
+										<TabContent
+											eventKey={ 1 }
+											text='This is my 3rd project [2021]. I started this project to learn about graphics, lighting, shadows, animation, interactivity, cameras, textures, and transformations.'
+											link='https://solidwaterslayer.github.io/diamond-collecting-game/'
+										/>
+										<TabContent
+											eventKey={ 2 }
+											text='This is my 2nd project [2020]. I started this project to learn about test-driven development. The project has a backend with 100% mutation coverage.'
+											link='https://solidwaterslayer.github.io/paper-pushing-game-client/'
+										/>
+										<TabContent
+											eventKey={ 3 }
+											text='This is my 1st project [2020]. I started this project to learn angular and css.'
+											link='https://solidwaterslayer.github.io/virtual-pet/'
+										/>
+										<TabContent
+											eventKey={ 4 }
+											text='This is my 0th project [2019]. I started this project to learn about python and object-oriented programming.'
+											link='https://replit.com/@solidwater969/ball-game?v=1'
+										/>
+										<TabContent
+											eventKey={ 5 }
+											text='Future projects will be on github.'
+											link='https://github.com/solidwaterslayer'
+										/>
 									</Tab.Content>
 								</Col>
 							</Row>
