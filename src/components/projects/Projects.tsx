@@ -40,7 +40,7 @@ export default function Projects() {
 									<Tab.Content>
 										<TabContent
 											eventKey={ 0 }
-											text='This is my 4th project [2022]. I started this project to learn about javascript animations, UI|UX, responsiveness, accessibility, and react.'
+											text='This is my 4th project [2022]. I started this project to learn about javascript animations, UI|UX, and react.'
 											link='https://solidwaterslayer.github.io/random-facts-about-mee-website/'
 										/>
 										<TabContent
