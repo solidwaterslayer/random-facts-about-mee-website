@@ -21,10 +21,9 @@ export default function Projects() {
 				<Banner theme='bg-secondary text-light' isVideoLeft={ false } video={ ballGame } text='[0th] Ball Game'></Banner>
 			</div>
 			<div>
-				<div className='mx-0 my-5 row'>
+				<div className='mx-0 my-5 py-5 row'>
 					<div className='col-md-2'></div>
 					<div className='col-md-8 col-sm-12'>
-						<div></div>
 						<Tab.Container defaultActiveKey={ 0 }>
 							<Row>
 								<Col sm={ 3 }>
